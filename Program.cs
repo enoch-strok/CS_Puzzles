@@ -106,7 +106,7 @@ namespace CS_Puzzles
 
             
 
-            return people;
+            return peopleFiltered;
         }
 
 
