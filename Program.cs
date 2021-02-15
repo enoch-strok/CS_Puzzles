@@ -67,6 +67,7 @@ namespace CS_Puzzles
         public static List<string> Names()
         {
             List<string> people = new List<string>();
+            List<string> peopleFiltered = new List<string>();
             //Use the Add function in a similar fashion to push
             people.Add("Todd");
             people.Add("Tiffany");
@@ -94,6 +95,16 @@ namespace CS_Puzzles
             foreach(string person in people){
                 Console.WriteLine(person);
             }
+            for (int i = 0; i < people.Count; i++)
+            {
+                string currentPerson = people[i];
+                if(currentPerson.Length > 5){
+                    peopleFiltered.Add(currentPerson);
+                    Console.WriteLine($"Added {currentPerson} to new list");
+                }
+            }
+
+            
 
             return people;
         }
